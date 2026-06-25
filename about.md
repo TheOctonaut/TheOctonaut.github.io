@@ -6,20 +6,19 @@ permalink: /about/
 
 ## Gavin Golden
 
-I'm a [your profession/background]. This site is my space for sharing creative work, technical reflections, and personal writing.
+I'm a real person. This site is my space for sharing creative work, technical reflections, and personal writing.
 
 ### Interests
 
 - Creative practice (photography, drawing, painting)
-- [Your interests here]
-- [Your interests here]
+- Nature and zoology
+- Travel, cultures, new experiences
 
 ### Work
 
-[Your professional background and current focus]
+I am a software development manager and Chapter Lead for Full Stack Web Development at Three Ireland.
 
 ### Elsewhere
 
 - [GitHub](https://github.com/TheOctonaut)
-- [Twitter](https://twitter.com/your_handle)
 - [Email](mailto:your-email@example.com)
