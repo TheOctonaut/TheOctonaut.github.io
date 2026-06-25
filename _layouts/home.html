@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<section class="collections">
+  {% if site.writings.size > 0 %}
+  <div class="collection">
+    <h2>Writings</h2>
+    <ul>
+    {% for writing in site.writings limit:5 %}
+      <li>
+        <a href="{{ writing.url }}">{{ writing.title }}</a>
+        <time>{{ writing.date | date: "%B %d, %Y" }}</time>
+      </li>
+    {% endfor %}
+    </ul>
+    {% if site.writings.size > 5 %}<a href="/writings/">View all →</a>{% endif %}
+  </div>
+  {% endif %}
+
+  {% if site.reflections.size > 0 %}
+  <div class="collection">
+    <h2>Reflections</h2>
+    <ul>
+    {% for reflection in site.reflections limit:5 %}
+      <li>
+        <a href="{{ reflection.url }}">{{ reflection.title }}</a>
+        <time>{{ reflection.date | date: "%B %d, %Y" }}</time>
+      </li>
+    {% endfor %}
+    </ul>
+    {% if site.reflections.size > 5 %}<a href="/reflections/">View all →</a>{% endif %}
+  </div>
+  {% endif %}
+
+  {% if site.art.size > 0 %}
+  <div class="collection">
+    <h2>Art</h2>
+    <ul>
+    {% for piece in site.art limit:5 %}
+      <li>
+        <a href="{{ piece.url }}">{{ piece.title }}</a>
+        <time>{{ piece.date | date: "%B %d, %Y" }}</time>
+      </li>
+    {% endfor %}
+    </ul>
+    {% if site.art.size > 5 %}<a href="/art/">View all →</a>{% endif %}
+  </div>
+  {% endif %}
+</section>

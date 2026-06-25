@@ -1,0 +1,56 @@
+# Jekyll configuration for GavinGolden.com
+
+title: Gavin Golden
+description: Writings, art, and reflections on work, creativity, and life.
+url: https://gavingolden.com
+baseurl: ""
+
+# Email and social
+email: your-email@example.com
+twitter: your_handle
+github: TheOctonaut
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Collections for different content types
+collections:
+  writings:
+    output: true
+    permalink: /writings/:slug/
+  art:
+    output: true
+    permalink: /art/:slug/
+  reflections:
+    output: true
+    permalink: /reflections/:slug/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "writings"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "reflections"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+      type: "art"
+    values:
+      layout: "art"
+
+# Exclude from production
+exclude:
+  - .gitignore
+  - README.md
+  - .DS_Store
